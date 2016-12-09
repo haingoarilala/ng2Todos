@@ -91,6 +91,14 @@ span.psw {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
+/************* alert *************/
+.alert {
+    padding: 5px;
+    background-color: #f44336;
+     border-left: 6px solid #ff0000;
+    color: white;
+}
+/******************************/
 @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}

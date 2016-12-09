@@ -7,10 +7,12 @@
   <div class="container">
     <label><b>Username</b></label>
     <input type="text" [ngClass]="{'has-error':!formGroup.controls['name'].valid && formGroup.controls['name'].touched}"  placeholder="Enter Username" name="uname"  [formControl]="formGroup.controls['name']">
-
+    <div *ngIf="formGroup.controls['name'].hasError('required') && formGroup.controls['name'].touched" class="alert">You must name.</div>
     <label><b>Password</b></label>
     <input type="password" [ngClass]="{'has-error':!formGroup.controls['password'].valid && formGroup.controls['password'].touched}"  placeholder="Enter Password" name="psw"  [formControl]="formGroup.controls['password']">
-
+    <div *ngIf="formGroup.controls['password'].hasError('required') && formGroup.controls['password'].touched" class="alert">You must include a password.</div>
+    <div *ngIf="formGroup.controls['password'].hasError('minlength') && formGroup.controls['password'].touched" class="alert">Your last name must be at least 5 characters long.</div>
+    <div *ngIf="formGroup.controls['password'].hasError('maxlength') && formGroup.controls['password'].touched" class="alert">Your last name cannot exceed 10 characters.</div>
     <button type="submit"  [disabled]="!formGroup.valid">Login</button>
     <input type="checkbox"  [formControl]="formGroup.controls['remember']"> Remember me
   </div>

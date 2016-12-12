@@ -4,10 +4,12 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AlertDirective } from './directive/alert.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlertDirective
   ],
   imports: [
     BrowserModule,

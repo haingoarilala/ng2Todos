@@ -13,5 +13,6 @@ export class MenuComponent implements OnInit {
   }
   active(){
     this.isActive=!this.isActive;
+    console.log(this.isActive);
   }
 }

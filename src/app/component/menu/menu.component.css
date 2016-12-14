@@ -1,46 +1,62 @@
-ul {
+.nav-bar{
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
+    padding: .2rem .5rem;
+     z-index: 1;
+}
+.bg-2FB6D5{
+    background-color: #2FB6D5;
+}
+.bg-4CAF50{
+    background-color: #4CAF50;
+}
+.fixed-top{
+     position: fixed;
+    top: 0;
+}
+.fixed-bottom{
+    position: fixed;
+    bottom: 0;
+}
+.nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #4CAF50;
-    position: fixed;
-    top: 0;
-    width: 100%;
     font-family: 'Sofia';font-size: 22px;
-    z-index: 1;
+    
 }
-li {
+.nav-bar ul.right{
+    float: right;
+}
+.nav-bar ul li {
     float: left;
 }
-li a {
+.nav-bar ul li a {
     display: block;
-    color: white;
+   color: #eee;
     padding: 12px;
     text-decoration: none;
     transition: all ease 0.5s;
 }
-li a::after {
+.nav-bar ul li a::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: #EEE;
     transition: width .3s;
-
-
 }
-li a:hover::after {
+.nav-bar ul li a:hover::after {
     width: 100%;
 }
-li a.active-menu::after{
+.nav-bar ul li a.active::after{
    width: 100%;
 }
 .colorbar {
     width: 100%;
-    position: fixed;
      z-index: 2;
-    top:0;
 	clear: both;
     margin:0;
 	height:5px;
@@ -48,4 +64,31 @@ li a.active-menu::after{
 	background-image: -moz-linear-gradient(left,#D52F64,#2FB6D5,#48D52F,#C4D52F,#F8CFB2,#482FD5);
 	background-image: -ms-linear-gradient(left,#D52F64,#2FB6D5,#48D52F,#C4D52F,#F8CFB2,#482FD5);
 	background-image: -o-linear-gradient(left,#D52F64,#2FB6D5,#48D52F,#C4D52F,#F8CFB2,#482FD5);
+}
+.primary{
+    background-color:#387ef5;
+    color: #fff;
+}    
+.secondary{
+    background-color:#32db64;
+     color: #fff;
+}
+.danger{
+    color:#f53d3d;
+}
+.light{
+    background-color:#f4f4f4;
+     color: #fff;
+}
+.dark{
+    background-color:#222;
+     color: #fff;
+}
+.white{
+    background-color:#fff;
+     color: #fff;
+}    
+.inverse{
+    background-color: #f4f4f4;
+    color:#222;
 }

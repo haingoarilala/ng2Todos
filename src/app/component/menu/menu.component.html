@@ -1,8 +1,9 @@
-<nav>
+<nav class="nav-bar fixed-top secondary">
+	<!--div class="colorbar"></div-->
 	<ul>
-		<li><a class="active-menu" href="#home">Home</a></li>
-		<li><a href="#news">News</a></li>
-		<li><a href="#contact">Contact</a></li>
+		<li><a class="active-menu" [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a></li>
+		<li><a  [routerLink]="['/new']" [routerLinkActive]="['active']">News</a></li>
+		<li><a  [routerLink]="['/contact']" [routerLinkActive]="['active']">Contact</a></li>
 	</ul>
-  <div class="colorbar"></div>
+  <!--div class="colorbar"></div-->
 </nav>

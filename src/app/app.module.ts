@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AlertDirective } from './directive/alert.directive';
+import { MenuComponent } from './component/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlertDirective
+    AlertDirective,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
